@@ -1,19 +1,18 @@
 header{
     text-align: center;
-    color: #ffffff;
+    color: #;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     text-align: center;
-    background: #066e7e;
 }
 
 p{
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 img{
     border-radius:20%;
+    
 }
