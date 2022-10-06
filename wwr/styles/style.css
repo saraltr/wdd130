@@ -84,3 +84,7 @@ footer p{
 footer p a:hover{
     text-decoration: underline;
 }
+
+.mountains{
+    max-width: 50%;
+}
