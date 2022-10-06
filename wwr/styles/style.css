@@ -85,6 +85,10 @@ footer p a:hover{
     text-decoration: underline;
 }
 
+.cardimage{
+    max-width: fit-content;
+}
+
 .mountains{
-    max-width: 50%;
+    max-width: 70%;
 }
