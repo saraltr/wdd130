@@ -86,7 +86,7 @@ footer p a:hover{
 }
 
 .cardimage{
-    max-width: fit-content;
+    max-width:min-content
 }
 
 .mountains{
