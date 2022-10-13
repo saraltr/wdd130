@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@200&family=Kalam&display=swap');
 
 #content{
     max-width: 1600px;
@@ -6,10 +6,17 @@
 }
 
 .home-title{
-    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-family: 'Kalam', 'Arial Narrow Bold', cursive;
     font-size: 2em;
     margin-top: 10px;
     color: #5494a0;
+}
+
+.msg{
+    background-color: #5BA7DD;
+    color: white;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg p{
@@ -18,16 +25,12 @@
 }
 
 .msg h2{
-    font-family: 'Montserrat', Helvetica, sans-serif;
-}
-
-#background{
-    height: 725px;
+    font-family: 'Kalam', 'Arial Narrow Bold', cursive;
 }
 
 body{
     background-color: white;
-    font-family: 'Hind', Arial, sans-serif;
+    font-family: 'Hind Siliguri', 'Arial Narrow', sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -95,15 +98,9 @@ main section img {
 }
 
 #background{
+    height: 725px;
     background-color: aliceblue;
     margin: 50px 0;
-}
-
-.msg{
-    background-color: #5BA7DD;
-    color: white;
-    line-height: 1.5em;
-    padding: 35px;
 }
 
 .river-card, .camping-card, .rapids-card{
