@@ -9,7 +9,7 @@
     font-family: 'Kalam', 'Arial Narrow Bold', cursive;
     font-size: 2em;
     margin-top: 10px;
-    color: #5494a0;
+    color: #5F9FAB;
 }
 
 .msg{
@@ -37,11 +37,11 @@ body{
 }
 
 header {
-    background-color: #5494a0;
+    background-color: #5F9FAB;
 }
 
 nav a:hover {
-    background-color: #657b7b;
+    background-color: #164C8D;
     color: white;
 }
 
@@ -88,7 +88,7 @@ main section img {
 }
 
 .book, .join{
-    background-color: #657b7b;
+    background-color: #164C8D;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -108,11 +108,11 @@ main section img {
 }
 
 .card-img{
-    border: 10px solid #5494a0;
+    border: 10px solid #5F9FAB;
 }
 
 footer{
-    background-color: #657b7b;
+    background-color: #164C8D;
     color: white;
     padding: 25px 50px;
     margin-top: 200px;
