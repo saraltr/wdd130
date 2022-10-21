@@ -1,17 +1,30 @@
 header{
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
+    color: #1b4965;
+    background-color: white;
+    border: solid #1b4965;
+    text-align: center;
+}   
 
 body{
-    text-align: center;
-    background-color: #1b4965;
     color: white;
-    padding: 50px;
+    padding: 0;
+    width: 60%;
 }
 
 img{
-    border-radius:20%;
-    border: 20px solid #5fa8d3;
+    width: 20rem;
+    border: solid white;
+}
+
+.container{
+    display: grid;
+    background-color: #1b4965;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    color: #1b4965;
+    border: solid #1b4965;
 }
