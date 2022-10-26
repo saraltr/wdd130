@@ -55,7 +55,7 @@ nav a{
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+    margin-top: -125px;
 }
 
 #hero-box {
@@ -68,7 +68,7 @@ nav a{
 #hero-msg{
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 110px;
+    margin-top: 135px;
     z-index: 1;
 }
 
@@ -102,14 +102,15 @@ main section img {
 }
             
 .logo{
-    display: block;
-    width: 6rem;
+    width: 6.5rem;
 }
 
 #logo_link{
-    padding-top: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
     justify-self: center;
     align-self: center;
+    padding-top: 5px;
 }
 
 .home-grid{
