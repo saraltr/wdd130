@@ -19,6 +19,7 @@
 
 .msg h2{
     font-family: 'Kalam', 'Arial Narrow Bold', cursive;
+    color: #fff;
 }
 
 body{
@@ -216,18 +217,6 @@ footer .social img{
 
 /* Second page Css: Blog */
 
-#hero_blog {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -125px;
-}
-
-#hero-msg-blog{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 135px;
-    z-index: 1;
-}
 
 .blog-content h1, h2, h3{
     font-family: 'Kalam', 'Arial Narrow Bold', cursive;
@@ -413,32 +402,26 @@ footer .social img{
 
 }
 
-.hero_img{
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -2;
-    height: min-content;
+#hero_blog{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 #blog-box {
-    background-image: url("/wwr/images/hero_blog_background.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
 }
-
+#blog-box img{
+    grid-column: 1/4;
+    width: 100%;
+}
 .blog-title{
     font-family: 'Kalam', 'Arial Narrow Bold', cursive;
     font-size: 4em;
-    margin-top: 20px;
+    margin-top: -20px;
     color: #ffffff;
 }
-
 
 .subscribe {
     margin-top: 2rem;
@@ -501,7 +484,6 @@ footer .social img{
     }
 
     #blog-box {
-        background-image: url("/wwr/images/hero_blog.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
