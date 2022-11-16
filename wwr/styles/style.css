@@ -69,8 +69,17 @@ nav a{
 #hero-msg{
     grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 135px;
+    margin-top: 200px;
     z-index: 1;
+}
+
+#hero-msg-blog{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 200px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -405,6 +414,7 @@ footer .social img{
 #hero_blog{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -160px;
 }
 
 #blog-box {
@@ -419,7 +429,7 @@ footer .social img{
 .blog-title{
     font-family: 'Kalam', 'Arial Narrow Bold', cursive;
     font-size: 4em;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     color: #ffffff;
 }
 
@@ -472,6 +482,15 @@ footer .social img{
         display: block;
         height: auto;
     }
+
+    #hero_blog, .main_grid {
+        display: block;
+        height: auto;
+        margin-top: 0;
+    }
+    .article-content{
+        margin: 0;
+    }
     nav, footer {
         flex-direction: column;
     }
@@ -507,6 +526,7 @@ footer .social img{
     .blog-title {
         font-size: 40px;
         color: #5F9FAB;
+        margin-top: -200px;
     }
     .river-card, .camping-card, .rapids-card { 
         margin: 50px auto;
