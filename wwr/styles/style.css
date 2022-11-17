@@ -656,6 +656,13 @@ textarea {
         border-right: 5px solid #1D3557;
     }
 
+    .main-article-img{
+        display: block;
+        justify-self: center;
+        margin: 50px;
+        width: 80%;
+    }
+
     .subscribe {
         display: block;
         width: fit-content;
