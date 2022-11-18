@@ -508,22 +508,13 @@ footer .social img{
 
 /* contact us page css */
 
-/* section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-} */
 
 .contact_header {
     height: 40vh;
     grid-column: 1/4;
     z-index: -2;
     width: 100%;
-    background-image: url('https://images.unsplash.com/photo-1668415868517-3dd4cd17ba43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-image: url('forms_hero.jpg');
     background-position:  center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -634,6 +625,11 @@ textarea {
         height: auto;
     }
 
+    .contact_header{
+        display: block;
+        height: 20vhs;
+    }
+
     #hero_blog, .main_grid {
         display: block;
         height: auto;
@@ -686,6 +682,15 @@ textarea {
         width: 80%;
     }
 
+    .contact_form{
+        display: block;
+        width: 60%;
+    }   
+    .contact_button{
+        display: block;
+        align-self: center;
+        width: fit-content;
+    }
     .subscribe {
         display: block;
         width: fit-content;
