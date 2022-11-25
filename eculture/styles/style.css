@@ -161,8 +161,8 @@ nav a:hover{
     width: 100%;
 }
 
-.learn_more{
-    background-color: #973535;
+.learn_more, .contact_button{
+    background-color: #4B1B1B;
     color: white;
     padding: 1rem;
     grid-column: 2/3;
@@ -174,9 +174,13 @@ nav a:hover{
     text-align:center;
     cursor: pointer;
 }
+button a{
+    text-decoration: none;
+}
 
-.learn_more:hover{
-    background-color: #4B1B1B;
+.learn_more:hover, .contact_button:hover{
+    background-color: #973535;
+    transform: scale(1.1)
 }
 
 .tech_info{
@@ -233,15 +237,15 @@ nav a:hover{
     display: grid;
     grid-template-columns: 0.5fr 3fr 1fr 3fr 0.5fr;
     color: #F7F2EA;
-    text-align: center;
+    text-align:end;
 }
 
 .our_services h2{
     grid-column: 1/6;
     font-size: 3rem;
     color: #973535;
-    text-align: center;
     border: 1px solid #4B1B1B;
+    text-align: center;
     padding: 1.3rem;
 }
 
@@ -256,11 +260,26 @@ nav a:hover{
     width: 100%;
     z-index: -2;
 }
+
 .background_color2{
-    background-color: #F7F2EA;
+    background-color: #4B1B1B;
     grid-column: 1/6;
     grid-row: 6/11;
     width: 100%;
+    z-index: -2;
+}
+
+.background_color3{
+    background-color: #F7F2EA;
+    grid-column: 1/6;
+    grid-row: 11/16;
+    z-index: -2;
+}
+
+.background_color4{
+    background-color: #466286;
+    grid-column: 1/6;
+    grid-row: 16/20;
     z-index: -2;
 }
 
@@ -272,12 +291,27 @@ nav a:hover{
 
 }
 
+.heritage{
+    grid-column: 4/5;
+    grid-row: 12/13;
+    margin: 1rem;
+    padding: 2rem;
+    color: #466286;
+}
+
 .spaces{
     grid-column: 2/3;
     grid-row: 7/9;
     margin: 1rem;
     padding: 2rem;
-    color: #466286;
+    text-align: left;
+}
+.tourism{
+    grid-column: 2/3;
+    grid-row: 16/17;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: left;
 }
 
 .history_img{
@@ -289,7 +323,108 @@ nav a:hover{
     grid-column: 4/5;
     grid-row: 5/9;
 }
+.heritage_img{
+    grid-column: 2/3;
+    grid-row: 9/14;
+}
+.tourism_img{
+    grid-column: 4/5;
+    grid-row: 13/17;
+}
 
+
+.contact_form{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 3fr 0.5fr;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #F7F2EA;
+    margin: 1rem;
+}
+
+.background_form{
+    grid-column: 1/6;
+    grid-row: 3/6;
+    background-color: #973535;
+    border: solid 5px #4B1B1B;
+    box-shadow: 5px 5px 10px #6f7364;
+}
 .img_form{
-    width: 500px;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    align-self: center;
+    width: 100%;
+    border: 5px solid #4B1B1B;
+}
+.contact_msg{
+    grid-column: 2/3;
+    grid-row: 4/6;
+    text-align: center;
+}
+.form{
+    grid-column: 4/5;
+    grid-row: 3/5;
+    text-align: center;
+}
+.form_title{
+    border: solid 3px #4B1B1B;
+    padding: 20px;
+}
+.form_text{
+    font-family: 'Yeseva One', Courier, cursive;
+    font-size: 1.6rem;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+
+.form ul{
+    list-style: none;
+}
+.form li{
+    padding: 1rem;
+    align-self: center;
+}
+
+textarea, input {
+    width: 30rem;
+    height: 4.25rem;
+}
+
+footer{
+    background-color: #4B1B1B;
+    color: #F7F2EA;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a{
+    color: #F7F2EA;
+    text-decoration: none;
+}
+footer li{
+    padding: 20px;
+}
+
+.contact li a:hover{
+    text-decoration: underline;
+
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+footer .social img{
+    padding-top: 15px;
 }
