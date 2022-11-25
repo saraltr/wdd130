@@ -201,9 +201,8 @@ button a{
     grid-column: 2/3;
     grid-row: 1/7;
     z-index: 1;
-    height: 750px;
+    height: 56.25rem;
     justify-self: center;
-    margin: 50px;
 }
 .info_box{
     grid-column: 4/5;
