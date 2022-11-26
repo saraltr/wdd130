@@ -137,10 +137,9 @@ nav a:hover{
     justify-content: center;
 }
 
-
 .welcome_msg{
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
     width: 100%;
     border: 0;
     margin: 10%;
@@ -152,9 +151,10 @@ nav a:hover{
 }
 .welcome_img{
     grid-column: 4/5;
-    grid-row: 2/3;
+    grid-row: 2/4;
     margin: 10%;
     align-self: center;
+    width: 100%;
 }
 .map{
     align-self: center;
@@ -162,8 +162,8 @@ nav a:hover{
 }
 
 .learn_more, .contact_button{
-    background-color: #4B1B1B;
-    color: white;
+    background-color: #F7F2EA;
+    color: #466286;
     padding: 1rem;
     grid-column: 2/3;
     grid-row: 3/3;
@@ -173,13 +173,27 @@ nav a:hover{
     display:block;
     text-align:center;
     cursor: pointer;
+    font-size: 1rem;
 }
+
+.contact_button{
+    background-color: #4B1B1B;
+    color: white;
+}
+
 button a{
     text-decoration: none;
 }
 
-.learn_more:hover, .contact_button:hover{
+.learn_more:hover{
+    background-color: #F7F2EA;
+    color: #466286;
+    transform: scale(1.1)
+}
+
+.contact_button:hover{
     background-color: #973535;
+    color: #F7F2EA;
     transform: scale(1.1)
 }
 
@@ -228,8 +242,12 @@ button a{
     justify-self: center;
 }
 
-.img_one, .img_two, .img_three, .img_four{
+.img_one, .img_two{
     width: 200px;
+    border: 5px solid #F7F2EA;
+}
+.img_one:hover, .img_two:hover{
+    transform: scale(1.1)
 }
 
 .our_services{
@@ -278,7 +296,7 @@ button a{
 .background_color4{
     background-color: #466286;
     grid-column: 1/6;
-    grid-row: 16/20;
+    grid-row: 15/20;
     z-index: -2;
 }
 
@@ -307,7 +325,7 @@ button a{
 }
 .tourism{
     grid-column: 2/3;
-    grid-row: 16/17;
+    grid-row: 15/17;
     margin: 1rem;
     padding: 2rem;
     text-align: left;
@@ -329,6 +347,7 @@ button a{
 .tourism_img{
     grid-column: 4/5;
     grid-row: 13/17;
+    margin-bottom: 50px;
 }
 
 
