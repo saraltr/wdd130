@@ -11,16 +11,19 @@
 <body>
     <div class="content">
         <header>
-            <nav>
+            <nav class="topnav">
+                <a href="javascript:void(0);" class="icon_nav" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                
+                </a>
                 <a class="nav_link" href="index.html">Home</a>
                 <a class="nav_link" href="discover.html">Discover</a>              
                 <a href="index.html">
                     <img class="logo" src="images/eculture_logo_white.png" alt="eculture logo">
                 </a>
                 <a class="nav_link" href="blog.html">Blog</a>
-                <a class="nav_link" href="site-plan.html">Site Plan</a>
-                
-            </nav>
+                <a class="nav_link" href="site-plan.html">Site Plan</a>               
+            </nav>     
         </header>
 
         <main class="index_content">
@@ -122,11 +125,10 @@
                     <div class="background_form"></div>
                     <img id="form" class="img_form" src="images/versailles.jpg" alt="">
                     <div class="contact_msg">
-                        <h2>Realize your projects with Eculture!</h2>
+                        <h2>Bring your projects to life with Eculture!</h2>
                         <p>Need help with the digital promotion of your cultural patrimony ? Get in touch with us today! Together we can build an online space dedicated to celebrate and share our history and culture.</p>
                     </div>
-                    <div id="feedback"></div>
-                    <form class="form" action="/my-handling-form-page" method="post">
+                    <form class="form">
                         <h2 class="form_title">Send us a message</h2>
                         <ul>
                         <li>
@@ -145,11 +147,13 @@
                             <textarea id="msg" name="user_message"></textarea>
                         </li>
                         <li>
-                            <input class="contact_button" type="submit" value="Send">
+                            <button id="send_btn" onclick="javascript:alert('Thank you for your message. We will get back with you as soon as possible!')" class="contact_button">Send</button>
                         </li>
                         </ul>
                     </form>
                 </section>
+
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             </div>
 
 
@@ -183,21 +187,44 @@
         </main>
     </div>
     <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
+
+            // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 80px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+
+        var input = document.getElementById("msg");
+        input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("send_btn").click();
+        }
         });
+        
+        function myFunction() {
+        var x = document.getElementsByTagName("nav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
     </script>
 
 </body>
