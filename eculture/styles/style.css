@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Yeseva+One&display=swap');
 
 /* *{
-    border: 1px solid ;
+    border: 2px white solid ;
 } */
 
 body{
@@ -219,9 +219,7 @@ button a{
     grid-column: 2/3;
     grid-row: 1/6;
     z-index: 1;
-    justify-self: center;
-    width: 100%;
-    border: 6px solid #F7F2EA;
+    border: 5px solid #F7F2EA;
 }
 .info_box{
     grid-column: 4/5;
@@ -242,12 +240,13 @@ button a{
 .tech_img_boxes{
     grid-column: 4/5;
     grid-row: 4/5;
+    display: flex;
     justify-self: center;
     margin: 1rem;
 }
 
 .img_one, .img_two{
-    width: 200px;
+    width: 150px;
     border: 5px solid #F7F2EA;
 }
 .img_one:hover, .img_two:hover{
@@ -268,6 +267,7 @@ button a{
     border: 1px solid #4B1B1B;
     text-align: center;
     padding: 1.3rem;
+    margin: 6rem 0;
 }
 
 .our_services img{
@@ -418,24 +418,24 @@ textarea, input{
 
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #973535; /* Set a background color */
-    color: #F7F2EA; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #973535; 
+    color: #F7F2EA;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 18px; 
     border: solid 2px #F7F2EA;
   }
   
   #myBtn:hover {
-    background-color: #F7F2EA; /* Add a dark-grey background on hover */
+    background-color: #F7F2EA;
     color: #4B1B1B;
     border: solid 2px #4B1B1B;
   }
@@ -470,6 +470,193 @@ footer p a:hover{
 footer .social img{
     padding-top: 15px;
 }
+
+/* discover page */
+
+.discover_hero{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #4B1B1B;
+    justify-content: center;
+    /* place-items: center; */
+}
+
+.first_img{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    height: 400px;
+    max-height: 100%;
+    display: block;
+    justify-self: center;
+}
+.second_img{
+    grid-column: 3/5;
+    grid-row: 1/4;
+    height: 400px;
+    max-height: 100%;
+    display: block;
+    justify-self: center;
+}
+.third_img{
+    grid-column: 6/7;
+    grid-row: 1/4;
+    height: 400px;
+    max-height: 100%;
+    display: block;
+    justify-self: center;
+}
+
+.dicover_title{
+    text-align: center;
+    font-size: 7rem;
+    z-index: 1;
+    color: white;
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background-color: #9735354a;
+}
+
+.main_events{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+.main_events h2, .main_events h3{
+    color: #973535;
+}
+
+.main_events p{
+    padding: 0 60px;
+}
+
+.main_events img{
+    width: 25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.discover_info{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    padding: 4rem;
+}
+.discover_info h2{
+    border-bottom: solid 2px #4B1B1B;
+}
+.gallery_card{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+}
+.museum_card{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.tourism_card{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.history_card{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 70%;
+    grid-column: 1/5;
+    justify-self: center;
+    padding-top: 2rem;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: #F7F2EA;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: #9735357d
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #F7F2EA;
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 3;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #4B1B1B;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
 
 @media screen and (max-width: 1000px) {
