@@ -525,7 +525,7 @@ footer .social img{
 
 .main_events{
     display: grid;
-    grid-template-columns: repeat(9, auto);
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr;
     justify-content: center;
     text-align: center;
     padding: 2rem;
@@ -575,7 +575,7 @@ footer .social img{
 }
 
 .img_card{
-    display: block;
+    /* display: block; */
     width: auto;
     height: 300px;
 }
@@ -610,8 +610,8 @@ footer .social img{
   
   .container {
     position: relative;
-    width: 70%;
-    grid-column: 1/10;
+    width: 75%;
+    grid-column: 2/9;
     justify-self: center;
     padding-top: 2rem;
   }
