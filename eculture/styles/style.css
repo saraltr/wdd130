@@ -733,7 +733,8 @@ footer .social img{
     background-color: #973535;
     color: #F7F2EA;
     cursor: pointer;
-    transform: scale(1.1)
+    transform: scale(1.02);
+    transition: 0.3s;
     
 }
 
