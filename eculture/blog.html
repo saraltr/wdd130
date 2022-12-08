@@ -25,108 +25,108 @@
         <main class="blog_content">
             <section class="hero_box">
                 <div class="blog_hero">
-                    <img src="images/blog_hero.jpg" alt="orsay horloge">
-                    <img src="images/street_art.jpg" alt="street art">
-                    <img src="images/street_artist.jpg" alt=" street artist painting a woman">
+                    <img class="first_img"  src="images/blog_hero.jpg" alt="orsay horloge">
+                    <img class="second_img"  src="images/street_art.jpg" alt="street art">
+                    <img class="third_img"  src="images/street_artist.jpg" alt=" street artist painting a woman">
                     <h1 class="blog_title">Blog</h1>
-                    <p>Read about our latest projects, as well as our favorite artistic and cultural discoveries, including travel, history, museums, music, books, archives and gastronomy!</p>
+                    <!-- <p>Read about our latest projects, as well as our favorite artistic and cultural discoveries, including travel, history, museums, music, books, archives and gastronomy!</p> -->
                 </div>
             </section>
 
-            <div class="search_bar">
-                <input type="text" placeholder="Search..">
-                <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
+            <form class="example" action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
 
             <section class="featured_article">
                 <div class="right_article">
                     <h3>Headline</h3>
                     <p>The role of an art center is to decompartmentalize, and this is why digital technology must take its place in 21st century exhibitions. Put at the service of creation, it becomes a formidable vector of dissemination, capable of creating bridges between eras, to make artistic practices vibrate between them, to amplify emotions, to reach as many people as possible.</p>
-                    <img src="images/lights_expo_red.jpg" alt="">
                 </div>
+                <img id="right" class="side" src="images/lights_expo_red.jpg" alt="red ligths expo">
                 <div class="center_article">
-                    <h1>Featured Article</h1>
+                    <h3>Featured Article</h3>
+                    <br>
                     <h2>New Technologies & Art: The Popularity of Immersive Art</h2>
-                    <img src="images/lights_expo_main.jpg" alt="">
-                    <p>Through a thematic, intimate and introspective journey, immersive exhibitions offer unique experience to their visitors. Using animation, videos, text, and visual effects as elements of projections galleries explore approaches to engaging museum visitors. Based on observation as well as interviews of museum visitors, we have analysed how the installation supports sense-making, engaging conversations, and playful engagement.</p>
-                    <button type="button">Read more</button>
+                    <img  src="images/lights_expo_main.jpg" alt="">
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <time datetime="2022-12-06"> Published: December 6th, 2022</time> 
+                        <br>
+                        <br>
+                        Through a thematic, intimate and introspective journey, immersive exhibitions offer unique experience to their visitors. Using animation, videos, text, and visual effects as elements of projections galleries explore approaches to engaging museum visitors. Based on observation as well as interviews of museum visitors, we have analysed how the installation supports sense-making, engaging conversations, and playful engagement.</p>
+                    <button class="read_more" type="button">Read more</button>
                     
                 </div>
                 <div class="left_article">
                     <h3>Headline</h3>
                     <p> Emphasizing interactivity, immersive exhibitions offer a new way to access art. Discover how historians and specialists also desire to communicate pedagogy though these technology driven exhibitions.</p>
-                    <img src="images/kevin-laminto-Fp0yB38caqU-unsplash.jpg" alt="">
                 </div>
+                <img id="left" class="side" src="images/kevin-laminto-Fp0yB38caqU-unsplash.jpg" alt="">
 
             </section>
+            
+            <div class="blog_grid">
+                <h2 class="archive_title">Articles Archive</h2>
+            
+                <div class="first_article">
+                    <img class="article_img" src="images/monet_inspi.jpg" alt="">
+                    <div class="tag"><h6>Date, subject</h6></div>
+                    <h3>Discover the real places that inspired Monet's paintings!</h3>
+                    <button type="submit">Read</button>
+                </div>
 
-            <section class="articles_archive">
-                <div class="card_articles">
-                    <div class="frist_article">
-                        <img src="images/monet_inspi.jpg" alt="">
-                        <div class="tag"><h6>Date, subject</h6></div>
-                        <h3>Discover the real places that inspired Monet's paintings!</h3>
-                        <button type="submit">Read</button>
-                    </div>
+                <div class="second_article">
+                    <img class="article_img" src="images/archives.jpg" alt="">
+                    <div class="tag"><h6>Date, subject</h6></div>
+                    <h3>Family History & Research: More importannt than ever</h3>
+                    <button type="submit">Read</button>
                 </div>
-                <div class="card_articles">
-                    <div class="second_article">
-                        <img src="images/archives.jpg" alt="">
-                        <div class="tag"><h6>Date, subject</h6></div>
-                        <h3>Family History & Research: More importannt than ever</h3>
-                        <button type="submit">Read</button>
-                    </div>
-                </div>
-                <div class="card_articles">
-                    <div class="third_article">
-                        <img src="images/paris_tour.jpg" alt="">
-                        <div class="tag"><h6>Date, subject</h6></div>
-                        <h3> Paris Transportation: The best ways to get around </h3>
-                        <button type="submit">Read</button>
-                    </div>
-                </div>
-                <div class="card_articles">
-                    <div class="fourth_article">
-                        <img src="images/nouvel_an_chinois.jpg" alt="">
-                        <div class="tag"><h6>Date, subject</h6></div>
-                        <h3>Chinese New Year: Celebrations and traditions</h3>
-                        <button type="submit">Read</button>
-                    </div>
-                </div>
-            </section>
 
-            <section class="about">
-                <h2>About</h2>
-                <p> Our articles highlight seasonal events, activities and festivities that are offered in your community or city so you won't miss out on anything!</p>
-                <p>We also value using interviews to promote initiatives and individuals. We speak with academics as well as individuals from all walks of life who stand out in their own fields and share with us their unique perspectives on the humanities, including philosophers, sociologists, historians, designers, and web content creators.
-                Take part in conversations with others who have similar interests to yours all over the world in the comment sections. Share your opinions on recent history and culture discoveries, and find valuable informations about what you are looking for!</p>
-                
-            </section>
-
-            <section class="left_nav">
-                <form class="subscribe">
-                    <h5 class="subscribe_title">NEWSLETTER</h5>
-                    <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates.</p>
-                    <div class="form">
-                        <input type="email" class="form_email" placeholder="Enter your email address" />
-                        <button type="submit" class="form_button">Send</button>
-                    </div>
-                </form>
-                <div class="tags">
-                    <h5>Tags</h5>
-                    <div> 
-                        <button type="submit"> subject 1</button>
-                        <button type="submit"> subject 2</button>
-                        <button type="submit"> subject 3</button>
-                    </div>
+                <div class="third_article">
+                    <img class="article_img" src="images/paris_tour.jpg" alt="">
+                    <div class="tag"><h6>Date, subject</h6></div>
+                    <h3> Paris Transportation: The best ways to get around </h3>
+                    <button type="submit">Read</button>
                 </div>
-                <div class="insta_feed">
-                    
-                </div>
-            </section>
 
+                <div class="fourth_article">
+                    <img class="article_img" src="images/nouvel_an_chinois.jpg" alt="">
+                    <div class="tag"><h6>Date, subject</h6></div>
+                    <h3>Chinese New Year: Celebrations and traditions</h3>
+                    <button type="submit">Read</button>
+                </div>
+
+
+
+                <aside class="left_nav">
+                    <section class="about">
+                        <h2>About</h2>
+                        <p> Our articles highlight seasonal events, activities and festivities that are offered in your community or city so you won't miss out on anything!</p>
+                        <p>We also value using interviews to promote initiatives and individuals. We speak with academics as well as individuals from all walks of life who stand out in their own fields and share with us their unique perspectives on the humanities, including philosophers, sociologists, historians, designers, and web content creators.
+                        Take part in conversations with others who have similar interests to yours all over the world in the comment sections. Share your opinions on recent history and culture discoveries, and find valuable informations about what you are looking for!</p>
+                    </section>
+                    <form class="subscribe">
+                        <h5 class="subscribe_title">NEWSLETTER</h5>
+                        <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates.</p>
+                        <div class="form">
+                            <input type="email" class="form_email" placeholder="Enter your email address" />
+                            <button type="submit" class="form_button">Send</button>
+                        </div>
+                    </form>
+                    <div class="tags">
+                        <h5>Tags</h5>
+                        <div> 
+                            <button type="submit"> subject 1</button>
+                            <button type="submit"> subject 2</button>
+                            <button type="submit"> subject 3</button>
+                        </div>
+                    </div>
+                    <div class="insta_feed">
+                        
+                    </div>
+                </aside>
+            </div>
 
         </main>
 
