@@ -21,7 +21,6 @@
                 <a class="nav_link" href="site-plan.html">Site Plan</a>               
             </nav> 
         </header>
-
         <main class="blog_content">
             <section class="hero_box">
                 <div class="blog_hero">
@@ -29,7 +28,6 @@
                     <img class="second_img"  src="images/street_art.jpg" alt="street art">
                     <img class="third_img"  src="images/street_artist.jpg" alt=" street artist painting a woman">
                     <h1 class="blog_title">Blog</h1>
-                    <!-- <p>Read about our latest projects, as well as our favorite artistic and cultural discoveries, including travel, history, museums, music, books, archives and gastronomy!</p> -->
                 </div>
             </section>
 
@@ -162,8 +160,6 @@
                     <button class="read_more" type="submit">Read</button>
                 </div>
 
-
-
                 <aside class="left_nav">
                     <section class="about">
                         <h2>About</h2>
@@ -197,22 +193,19 @@
                             <div class="text-block-insta">
                                 <p><i class="fa-brands fa-instagram"></i> Eculture_offical</p>
                             </div>
-                        </div>
-                        
-                        
+                        </div>                       
                     </div>
                 </aside>
             </div>
-
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </main>
-
-        <footer>   
+        <footer>    
             <div class="contact">
                 <ul>
-                    <li><i class="fa-solid fa-hashtag"> Get in contact</i></li>
-                    <li><a href="tel:+123-456-7890"><i class="fa-solid fa-phone">+123-456-7890</i></a></li>
-                    <li><a href="email:eculture@gmail.com"><i class="fa-solid fa-envelope"> eculture@gmail.com</i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-location-dot"> 123 Anywhere St., Any City</i></a></li>
+                    <li><i class="fa-solid fa-hashtag"></i>Get in contact</li>
+                    <li><a href="tel:+123-456-7890"><i class="fa-solid fa-phone"></i>+123-456-7890</a></li>
+                    <li><a href="email:eculture@gmail.com"><i class="fa-solid fa-envelope"></i> eculture@gmail.com</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i>123 Anywhere St., Any City</a></li>
                 </ul>
             </div>
             <p>Eculture &copy; 2022 - Sara Latorre</p>
@@ -232,6 +225,26 @@
             </div>
         </footer>
     </div>
-    
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 80px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
 </html>
