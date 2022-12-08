@@ -816,7 +816,6 @@ form.example::after {
     width: 500px;
     max-width: 100%;
 }
-
 .blog_grid{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr 3fr;
@@ -826,9 +825,25 @@ form.example::after {
     text-align: center;
     margin-top: 100px;
 }
+.blog_grid h3{
+    color: #4B1B1B;
+}
 .archive_title{
     grid-column: 1/6;
-    color: #4B1B1B;
+    color: #973535;
+}
+
+.thumbnail{
+    position: relative;
+}
+.text-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.66);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .article_img{
     width: 500px;
@@ -854,11 +869,62 @@ form.example::after {
 }
 .third_article{
     grid-column: 2/3;
-    grid-row: 3/5;
+    grid-row: 3/4;
 }
 .fourth_article{
     grid-column: 4/5;
+    grid-row: 3/4;
+}
+.fifth_article{
+    grid-column: 2/3;
     grid-row: 4/5;
+}
+.sisth_article{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+.subscribe{
+    border: solid 2px #4B1B1B;
+    padding: 10px 20px;
+}
+.form_new input{
+    padding: 7px;
+}
+.form_button{
+    background-color: #F7F2EA;
+    color: #4B1B1B;
+    border: solid 3px #4B1B1B;
+    padding: 8px;
+}
+.form_button:hover{
+    background-color: #4B1B1B;
+    color: #F7F2EA;
+}
+
+.tags button{
+    background-color: #4B1B1B;
+    color: #F7F2EA;
+    padding: 15px;
+    margin: 5px;
+}
+
+.insta_feed{
+    margin: 50px;
+}
+
+.insta_hero{
+    width: 300px;
+    /* max-width: 100%; */
+}
+
+.text-block-insta {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #466286c8;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
