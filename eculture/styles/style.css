@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Yeseva+One&display=swap');
 
-/* *{
-    border: 2px white solid ;
-} */
 
 body{
     margin: 0;
@@ -177,9 +174,16 @@ nav a:hover{
     font-size: 1rem;
 }
 
+.blog_grid .read_more, .featured_article .read_more{
+    width: 35%;
+    text-decoration: none;
+    font-size: large;
+}
+
 .contact_button, .read_more{
     background-color: #4B1B1B;
     color: white;
+    font-family: 'DM Sans', Tahoma, sans-serif;
 }
 
 button a{
@@ -906,6 +910,7 @@ form.example::after {
     color: #F7F2EA;
     padding: 15px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .insta_feed{

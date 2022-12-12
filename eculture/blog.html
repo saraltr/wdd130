@@ -52,7 +52,7 @@
                         <br>
                         <br>
                         Through a thematic, intimate and introspective journey, immersive exhibitions offer unique experience to their visitors. Using animation, videos, text, and visual effects as elements of projections galleries explore approaches to engaging museum visitors. Based on observation as well as interviews of museum visitors, we have analysed how the installation supports sense-making, engaging conversations, and playful engagement.</p>
-                    <button class="read_more" type="button">Read more</button>
+                    <a class="read_more" href="#">Read More</a>
                     
                 </div>
                 <div class="left_article">
@@ -78,7 +78,7 @@
                         <time datetime="2022-12-06"> Published: December 5th, 2022</time>
                     </div>
                     <h3>Discover the real places that inspired Monet's paintings!</h3>
-                    <button class="read_more" type="submit">Read</button>
+                    <button class="read_more" onclick="location.href='#article'">Read</button>
                 </div>
 
                 <div class="second_article">
@@ -94,7 +94,7 @@
                         <time datetime="2022-12-06"> Published: December 3rd, 2022</time>
                     </div>
                     <h3>Family History & Research: More importannt than ever</h3>
-                    <button class="read_more" type="submit">Read</button>
+                    <a class="read_more" href="#">Read</a>
                 </div>
 
                 <div class="third_article">
@@ -110,7 +110,7 @@
                         <time datetime="2022-12-06"> Published: December 1st, 2022</time>
                     </div>
                     <h3> The symbolism of Swan Lake, from stage to screen</h3>
-                    <button class="read_more" type="submit">Read</button>
+                    <a class="read_more" href="#">Read</a>
                 </div>
 
                 <div class="fourth_article">
@@ -126,7 +126,7 @@
                         <time datetime="2022-12-06"> Published: November 29th, 2022</time>
                     </div>
                     <h3>Chinese New Year: Celebrations and traditions</h3>
-                    <button class="read_more" type="submit">Read</button>
+                    <a class="read_more" href="#">Read</a>
                 </div>
                 <div class="fifth_article">
                     <div class="thumbnail">
@@ -141,7 +141,7 @@
                         <time datetime="2022-12-06"> Published: November 27th, 2022</time>
                     </div>
                     <h3> Gastronomic heritage day, when we gather around food </h3>
-                    <button class="read_more" type="submit">Read</button>
+                    <a class="read_more" href="#">Read</a>
                 </div>
 
                 <div class="sisth_article">
@@ -157,13 +157,13 @@
                         <time datetime="2022-12-06"> Published: November 24th, 2022</time>
                     </div>
                     <h3>Mobility events and fairs in 2023</h3>
-                    <button class="read_more" type="submit">Read</button>
+                    <a class="read_more" href="#">Read</a>
                 </div>
 
                 <aside class="left_nav">
                     <section class="about">
                         <h2>About</h2>
-                        <p> Our articles highlight seasonal events, activities and festivities that are offered in your community or city so you won't miss out on anything!</p>
+                        <p>Read about our latest projects, as well as our favorite artistic and cultural discoveries, including travel, history, museums, music, books, archives and gastronomy! <br> Our articles highlight seasonal events, activities and festivities that are offered in your community or city so you won't miss out on anything!</p>
                         <p>We also value using interviews to promote initiatives and individuals. We speak with academics as well as individuals from all walks of life who stand out in their own fields and share with us their unique perspectives on the humanities, including philosophers, sociologists, historians, designers, and web content creators.
                         Take part in conversations with others who have similar interests to yours all over the world in the comment sections. Share your opinions on recent history and culture discoveries, and find valuable informations about what you are looking for!</p>
                     </section>
@@ -175,16 +175,16 @@
                         <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates.</p>
                         <div class="form_new">
                             <input type="email" class="form_email" placeholder="Enter your email address" />
-                            <button type="submit" class="form_button">Send</button>
+                            <button id="news_btn" onclick="javascript:alert('Thank you for your! Your request has been received.')" class="form_button">Send</button>
                         </div>
                     </form>
                     <div class="tags">
                         <h5>Tags</h5>
                         <div> 
-                            <button type="submit"> Art History</button>
-                            <button type="submit"> History & Heritage</button>
-                            <button type="submit"> Events & Celebrations</button>
-                            <button type="submit"> Museums & Exhibitions</button>
+                            <button onclick="location.href='#article'"> Art History</button>
+                            <button onclick="location.href='#article'"> History & Heritage</button>
+                            <button onclick="location.href='#article'"> Events & Celebrations</button>
+                            <button onclick="location.href='#article'"> Museums & Exhibitions</button>
                         </div>
                     </div>
                     <div class="insta_feed">
@@ -245,6 +245,15 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+
+        // Newsletter button msg
+        var input = document.getElementById("msg");
+        input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("news_btn").click();
+        }
+        });
     </script>
 </body>
 </html>
