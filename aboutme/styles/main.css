@@ -10,16 +10,24 @@ body{
     color: white;
     padding: 0;
     width: 60%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 img{
-    width: 20rem;
+    max-width: 20rem;
+    width: 90%;
+    text-align: center;
     border: solid white;
 }
 
 .container{
-    display: grid;
+    padding: 1rem;
     background-color: #1b4965;
+}
+
+.info{
+    text-align: left;
 }
 
 footer{
