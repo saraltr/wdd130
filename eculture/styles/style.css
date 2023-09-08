@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Yeseva+One&display=swap');
+:root {
+    --para:"DM Sans", Tahoma, sans-serif;
+    --headline: "Yeseva One", Courier, cursive;
+}
 
 
 body{
@@ -7,7 +10,7 @@ body{
 }
 
 h1, h2, h3, h4, h5{
-    font-family: 'Yeseva One', Courier, cursive;
+    font-family: var(--headline)
 }
 
 h2{
@@ -19,7 +22,7 @@ h3{
 }
 
 p{
-    font-family: 'DM Sans', Tahoma, sans-serif;
+    font-family: var(--para);
     font-size: 1.2rem;
 }
 
@@ -46,7 +49,7 @@ footer ul{
 nav{
     display: flex;
     justify-content: space-evenly;
-    font-family: 'Yeseva One', Courier, cursive;
+    font-family: var(--headline);
     overflow: hidden;
 }
 
@@ -183,7 +186,7 @@ nav a:hover{
 .contact_button, .read_more{
     background-color: #4B1B1B;
     color: white;
-    font-family: 'DM Sans', Tahoma, sans-serif;
+    font-family: var(--para);
 }
 
 button a{
@@ -403,7 +406,7 @@ button a{
     padding: 20px;
 }
 .form_text{
-    font-family: 'Yeseva One', Courier, cursive;
+    font-family: var(--headline);
     font-size: 25px;
 }
 
@@ -418,7 +421,7 @@ button a{
 .contact_form textarea, .contact_form input{
     width: 480px;
     height: 68px;
-    font-family: 'DM Sans', Tahoma, sans-serif;
+    font-family: var(--para);
     font-size: 1.2rem;
     max-width: 100%;
     max-height: 100%;
