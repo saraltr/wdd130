@@ -1,6 +1,10 @@
 :root {
+    /* fonts */
     --para:"DM Sans", Tahoma, sans-serif;
     --headline: "Yeseva One", Courier, cursive;
+
+    /* palette */
+    --primary: #973535;
 }
 
 
@@ -32,7 +36,7 @@ p{
 }
 
 header{
-    background-color: #973535;
+    background-color: var(--primary);
 }
 .logo{
    width: 9rem;
@@ -87,7 +91,7 @@ nav a:hover{
 }
 
 .tablink:hover {
-    background-color: #973535;
+    background-color: var(--primary);
   }
 
 .index_slider{
@@ -147,7 +151,7 @@ nav a:hover{
     margin: 10%;
 }
 .welcome_msg h2{
-    color: #973535;
+    color: var(--primary);
     border-bottom: solid 3px #4B1B1B;
 }
 .welcome_img{
@@ -200,7 +204,7 @@ button a{
 }
 
 .contact_button:hover, .read_more:hover{
-    background-color: #973535;
+    background-color: var(--primary);
     color: #F7F2EA;
     transform: scale(1.1);
     transition: all 0.3s ease;
@@ -273,7 +277,7 @@ button a{
 
 .our_services h2{
     grid-column: 1/6;
-    color: #973535;
+    color: var(--primary);
     border: 1px solid #4B1B1B;
     text-align: center;
     padding: 1.3rem;
@@ -286,7 +290,7 @@ button a{
 }
 
 .background_color1{
-    background-color: #973535;
+    background-color: var(--primary);
     grid-column: 1/6;
     grid-row: 3/6;
     z-index: -2;
@@ -380,7 +384,7 @@ button a{
 .background_form{
     grid-column: 1/6;
     grid-row: 3/6;
-    background-color: #973535;
+    background-color: var(--primary);
     border: solid 5px #4B1B1B;
     box-shadow: 5px 5px 10px #464343;
 }
@@ -435,7 +439,7 @@ button a{
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: #973535; 
+    background-color: var(--primary);
     color: #F7F2EA;
     cursor: pointer; 
     padding: 15px; 
@@ -535,7 +539,7 @@ footer .social img{
     padding: 2rem;
 }
 .main_events h2, .main_events h3, .activities h2{
-    color: #973535;
+    color: var(--primary);
 }
 
 .discover_info{
@@ -598,7 +602,7 @@ footer .social img{
   }
 
   .text {
-    color: #973535;
+    color: var(--primary);
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -734,7 +738,7 @@ footer .social img{
     border-radius: 1rem;
 }
 .activities_card:hover{
-    background-color: #973535;
+    background-color: var(--primary);
     color: #F7F2EA;
     cursor: pointer;
     transform: scale(1.02);
@@ -758,7 +762,7 @@ form.example button {
     float: left;
     width: 20%;
     padding: 10px;
-    background: #973535;
+    background: var(--primary);
     color: white;
     font-size: 17px;
     border: 1px solid grey;
@@ -785,7 +789,7 @@ form.example::after {
 }
 
 .featured_article h2{
-    color: #973535;
+    color: var(--primary);
 }
 .featured_article h3{
     color: #4B1B1B;
@@ -837,7 +841,7 @@ form.example::after {
 }
 .archive_title{
     grid-column: 1/6;
-    color: #973535;
+    color: var(--primary);
 }
 
 .thumbnail{
@@ -857,7 +861,7 @@ form.example::after {
     text-align: center;
 }
 .left_nav{
-    background-color: #973535;
+    background-color: var(--primary);
     color: #F7F2EA;
     padding: 50px;
     grid-column: 6/7;
@@ -958,7 +962,7 @@ form.example::after {
 
     .contact_form{
         display: block;
-        background-color: #973535;
+        background-color: var(--primary);
     }
     .background_form{
         display: none;
